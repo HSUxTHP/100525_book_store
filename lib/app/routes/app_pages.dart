@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 import '../modules/desktop/bindings/desktop_binding.dart';
@@ -47,93 +48,68 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.RESPONSIVE,
-      page: () => const ResponsiveView(),
+      page: () => ResponsiveView(),
       binding: ResponsiveBinding(),
     ),
 
     GetPage(
       name: Routes.DETAIL,
-      page: () {
-        // final book = Get.arguments as Book;
-        if (Get.width < 500) {
-          return m.DetailPage();
-        } else if (Get.width < 1367) {
-          return t.DetailPage();
-        } else {
-          return DetailPage();
-        }
-      },
+      page: () => const DetailWrapperPage(),
     ),
 
     GetPage(
       name: Routes.READ,
-      page: () {
-        if (Get.width < 500) {
-          return m.ReadPage();
-        } else if (Get.width < 1367) {
-          return t.ReadPage();
-        } else {
-          return ReadPage();
-        }
-      },
+      page: () => const ReadWrapperPage(),
     ),
 
     GetPage(
       name: Routes.CART,
-      page: () {
-        if (Get.width < 500) {
-          return m.CartPage();
-        } else if (Get.width < 1367) {
-          return t.CartPage();
-        } else {
-          return CartPage();
-        }
-      },
+      page: () => const CartWrapperPage(),
     ),
 
-    GetPage(
-      name: Routes.DESKTOP,
-      page: () => const DesktopView(),
-      children: [
-        GetPage(
-          name: Routes.DETAIL,
-          page: () => const DetailPage(),
-        ),
-        GetPage(
-          name: Routes.READ,
-          page: () => const ReadPage(),
-        ),
-      ],
-    ),
-
-    GetPage(
-      name: Routes.MOBILE,
-      page: () => const MobileView(),
-      children: [
-        GetPage(
-          name: Routes.DETAIL,
-          page: () => const m.DetailPage(),
-        ),
-        GetPage(
-          name: '/read',
-          page: () => const m.ReadPage(),
-        ),
-      ],
-    ),
-
-    GetPage(
-      name: Routes.TABLET,
-      page: () => const TabletView(),
-      children: [
-        GetPage(
-          name: Routes.DETAIL,
-          page: () => const t.DetailPage(),
-        ),
-        GetPage(
-          name: '/read',
-          page: () => const t.ReadPage(),
-        ),
-      ],
-    ),
+    // GetPage(
+    //   name: Routes.DESKTOP,
+    //   page: () => const DesktopView(),
+    //   children: [
+    //     GetPage(
+    //       name: Routes.DETAIL,
+    //       page: () => const DetailPage(),
+    //     ),
+    //     GetPage(
+    //       name: Routes.READ,
+    //       page: () => const ReadPage(),
+    //     ),
+    //   ],
+    // ),
+    //
+    // GetPage(
+    //   name: Routes.MOBILE,
+    //   page: () => const MobileView(),
+    //   children: [
+    //     GetPage(
+    //       name: Routes.DETAIL,
+    //       page: () => const m.DetailPage(),
+    //     ),
+    //     GetPage(
+    //       name: '/read',
+    //       page: () => const m.ReadPage(),
+    //     ),
+    //   ],
+    // ),
+    //
+    // GetPage(
+    //   name: Routes.TABLET,
+    //   page: () => const TabletView(),
+    //   children: [
+    //     GetPage(
+    //       name: Routes.DETAIL,
+    //       page: () => const t.DetailPage(),
+    //     ),
+    //     GetPage(
+    //       name: '/read',
+    //       page: () => const t.ReadPage(),
+    //     ),
+    //   ],
+    // ),
   ];
 }
