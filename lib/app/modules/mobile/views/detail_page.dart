@@ -4,7 +4,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:provider/provider.dart';
 
 import '../../../data/models/book_model.dart';
-import '../../../data/providers/cart_controller.dart';
+import '../../../data/controllers/cart_controller.dart';
 
 
 

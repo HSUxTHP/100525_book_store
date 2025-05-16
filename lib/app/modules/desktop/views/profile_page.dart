@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../widgets/book_card.dart';
-import '../../../data/providers/cart_controller.dart';
+import '../../../data/controllers/cart_controller.dart';
 import '../../../routes/app_pages.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -37,7 +37,7 @@ class ProfilePage extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 5,
-                  childAspectRatio: 2 / 3,
+                  childAspectRatio: 2 / 3.2,
                 ),
                 itemCount: books.length,
                 itemBuilder: (context, index) {

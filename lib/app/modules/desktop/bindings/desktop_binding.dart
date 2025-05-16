@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-import '../../../data/providers/cart_controller.dart';
+import '../../../data/controllers/cart_controller.dart';
 import '../controllers/desktop_controller.dart';
 
 class DesktopBinding extends Bindings {

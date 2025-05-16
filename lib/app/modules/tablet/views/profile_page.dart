@@ -5,7 +5,7 @@ import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../widgets/book_card.dart';
-import '../../../data/providers/cart_controller.dart';
+import '../../../data/controllers/cart_controller.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});

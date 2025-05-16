@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../app/data/models/book_model.dart';
-import '../app/data/providers/cart_controller.dart';
+import '../app/data/controllers/cart_controller.dart';
 
 class BookCard extends StatefulWidget {
   BookCard({super.key, required this.book});

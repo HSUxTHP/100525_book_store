@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../app/data/models/book_model.dart';
-import '../app/data/providers/cart_controller.dart';
+import '../app/data/controllers/cart_controller.dart';
 import '../app/routes/app_pages.dart';
 
 class ProductCart extends StatelessWidget {

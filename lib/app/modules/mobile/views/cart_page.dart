@@ -1,4 +1,4 @@
-import 'package:book_store/app/data/providers/cart_controller.dart';
+import 'package:book_store/app/data/controllers/cart_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
